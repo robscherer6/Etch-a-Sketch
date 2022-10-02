@@ -11,4 +11,4 @@ function createBoxes (numBoxes) {
   }
 }
 
-createBoxes(3);
+createBoxes(16);
