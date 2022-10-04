@@ -12,3 +12,15 @@ function createBoxes (numBoxes) {
 }
 
 createBoxes(16);
+
+let elements = document.getElementsByClassName('box');
+
+for (var i = 0; i < elements.length; i++) {
+  elements[i].addEventListener('mouseover', changeColor)
+}
+
+function changeColor() {
+  this.style.backgroundColor = 'black';
+}
+
+
