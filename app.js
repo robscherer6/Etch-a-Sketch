@@ -14,6 +14,7 @@ function createBoxes (numBoxes) {
 createBoxes(16);
 
 let elements = document.getElementsByClassName('box');
+//console.log(elements)
 
 for (var i = 0; i < elements.length; i++) {
   elements[i].addEventListener('mouseover', changeColor)
@@ -22,5 +23,14 @@ for (var i = 0; i < elements.length; i++) {
 function changeColor() {
   this.style.backgroundColor = 'black';
 }
+
+
+let btn = document.querySelector('.numSquares');
+btn.addEventListener('click', () => {
+  container.innerHTML = '';
+  let input = window.prompt('How many squares do you want in your grid?');
+  createBoxes(input);
+});
+
 
 
