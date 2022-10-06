@@ -30,6 +30,10 @@ btn.addEventListener('click', () => {
   container.innerHTML = '';
   let input = window.prompt('How many squares do you want in your grid?');
   createBoxes(input);
+  let boxes = document.getElementsByClassName('box')
+  for (var j = 0; j < boxes.length; j++) {
+    boxes[j].addEventListener('mouseover', changeColor)
+  }
 });
 
 
